@@ -13,6 +13,7 @@
 		7A85C6C0265D21B400440305 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A85C6BE265D21B400440305 /* Main.storyboard */; };
 		7A85C6C2265D21B500440305 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A85C6C1265D21B500440305 /* Assets.xcassets */; };
 		7A85C6C5265D21B500440305 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A85C6C3265D21B500440305 /* LaunchScreen.storyboard */; };
+		7A85C6CD265D2C6100440305 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A85C6CC265D2C6100440305 /* WelcomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		7A85C6C1265D21B500440305 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7A85C6C4265D21B500440305 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7A85C6C6265D21B500440305 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A85C6CC265D2C6100440305 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				7A85C6C1265D21B500440305 /* Assets.xcassets */,
 				7A85C6C3265D21B500440305 /* LaunchScreen.storyboard */,
 				7A85C6C6265D21B500440305 /* Info.plist */,
+				7A85C6CC265D2C6100440305 /* WelcomeViewController.swift */,
 			);
 			path = homeWork2.3;
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A85C6BD265D21B400440305 /* ViewController.swift in Sources */,
+				7A85C6CD265D2C6100440305 /* WelcomeViewController.swift in Sources */,
 				7A85C6B9265D21B400440305 /* AppDelegate.swift in Sources */,
 				7A85C6BB265D21B400440305 /* SceneDelegate.swift in Sources */,
 			);
@@ -289,6 +293,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J3726986L3;
 				INFOPLIST_FILE = homeWork2.3/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,7 +301,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Melasha.homeWork2-3";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -308,6 +313,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J3726986L3;
 				INFOPLIST_FILE = homeWork2.3/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +321,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Melasha.homeWork2-3";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
