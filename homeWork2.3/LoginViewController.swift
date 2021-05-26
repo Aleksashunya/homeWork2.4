@@ -15,8 +15,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var logInButton: UIButton!
     
-    private let userLogin = "User"
-    private let userPassword = "Password"
+    private let userLogin = "User"          //не самый оптимальный вариант, потом можно будет переделать на
+    private let userPassword = "Password"   //случай, когда есть несколько пользователей
     
     override func viewDidLoad() {
         super.viewDidLoad()
