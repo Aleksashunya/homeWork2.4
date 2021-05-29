@@ -22,7 +22,4 @@ class WelcomeViewController: UIViewController {
         welcomeLabel.text = "Welcome, \(userName)"
         logOutButton.layer.cornerRadius = 20
     }
-
-    @IBAction func logOutButtonTapped(_ sender: UIButton) {
-    }
 }

@@ -15,8 +15,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var logInButton: UIButton!
     
-    private let userLogin = "User"          //не самый оптимальный вариант, потом можно будет переделать на
-    private let userPassword = "Password"   //случай, когда есть несколько пользователей
+    private let userLogin = "User"
+    private let userPassword = "Password"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,8 +58,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBAction func logInButtonTapped(_ sender: UIButton) {
         guard userNameTextField.text == userLogin && passwordTextField.text == userPassword else {
             let alertVC = UIAlertController(title: "Invalid login or password", message: "Please, enter correct login and password", preferredStyle: .alert)
-            present(alertVC, animated: true)
             alertVC.addAction(UIAlertAction(title: "OK", style: .default))
+            present(alertVC, animated: true)
             return
         }
         performSegue(withIdentifier: "welcome", sender: nil)
@@ -75,8 +75,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     private func sayError(_ message: String) {
         let alertVC = UIAlertController(title: "Oops!", message: message, preferredStyle: .alert)
-        present(alertVC, animated: true)
         alertVC.addAction(UIAlertAction(title: "OK", style: .default))
+        present(alertVC, animated: true)
     }
 }
 
