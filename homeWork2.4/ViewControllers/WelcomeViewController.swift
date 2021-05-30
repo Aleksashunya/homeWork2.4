@@ -10,16 +10,16 @@ import UIKit
 class WelcomeViewController: UIViewController {
     
     @IBOutlet weak var welcomeLabel: UILabel!
-    @IBOutlet weak var pictureLabel: UILabel!
     
     @IBOutlet weak var logOutButton: UIButton!
     
-    internal var userName: String = ""
+    var userName: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        pictureLabel.text = " \u{1f44b} "
-        welcomeLabel.text = "Welcome, \(userName)"
+        welcomeLabel.text = "Welcome, \r \(userName)!"
         logOutButton.layer.cornerRadius = 20
+        view.addVerticalGradientLayer()
     }
 }
+
