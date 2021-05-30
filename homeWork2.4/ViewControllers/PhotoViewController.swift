@@ -16,7 +16,7 @@ class PhotoViewController: UIViewController {
     @IBOutlet weak var imageView5: UIImageView!
     @IBOutlet weak var imageView6: UIImageView!
     
-    var photoes = [""]
+    var photos = [""]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,11 +26,11 @@ class PhotoViewController: UIViewController {
     private func setup() {
         view.addVerticalGradientLayer()
         
-        imageView1.image = UIImage(named: photoes[0])
-        imageView2.image = UIImage(named: photoes[1])
-        imageView3.image = UIImage(named: photoes[2])
-        imageView4.image = UIImage(named: photoes[3])
-        imageView5.image = UIImage(named: photoes[4])
-        imageView6.image = UIImage(named: photoes[5])
+        imageView1.image = UIImage(named: photos[0])
+        imageView2.image = UIImage(named: photos[1])
+        imageView3.image = UIImage(named: photos[2])
+        imageView4.image = UIImage(named: photos[3])
+        imageView5.image = UIImage(named: photos[4])
+        imageView6.image = UIImage(named: photos[5])
     }
 }

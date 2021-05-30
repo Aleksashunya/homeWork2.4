@@ -27,7 +27,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             if let welcomeVC = viewController as? WelcomeViewController {
                 welcomeVC.userName = newPerson.person.fullName
             } else if let photoVC = viewController as? PhotoViewController {
-                photoVC.photoes = newPerson.person.photoes
+                photoVC.photos = newPerson.person.photos
             } else if let hobbiesVC = viewController as? HobbiesViewController {
                 hobbiesVC.hobbie = newPerson.person.hobbies
             }
